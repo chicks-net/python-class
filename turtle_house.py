@@ -39,7 +39,12 @@ turtle.forward(square_size)
 turtle.color("green")
 
 # triangle
-triangle_size = square_size
+# a^2 + b^2 = c^2
+# a = b ; c = square_size
+# 2 * ( a^2) = square_size^2
+# a^2 = (square_size^2)/2
+# a = sqrt ( (square_size^2)/2 )
+triangle_size = math.sqrt( ( square_size **2 ) /2 )
 turtle.left(right_angle/2)
 turtle.forward(triangle_size)
 turtle.left(right_angle)
