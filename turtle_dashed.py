@@ -5,8 +5,8 @@ import turtle
 dash_size=10
 space_size=3
 
-for y in range(14):
-	turtle.forward(dash_size)
+for y in range(9):
+	turtle.forward(dash_size + 3*y)
 	turtle.penup()
 	turtle.forward(space_size)
 	turtle.pendown()
