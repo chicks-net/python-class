@@ -21,8 +21,20 @@ def hexagon2():
 		hexagon()
 		turtle.left(120)
 
+def hexagon3():
+	for _ in range(3):
+		turtle.color("black")
+		hexagon2()
+		turtle.color("blue")
+		turtle.forward(90)
+		turtle.right(60)
+		turtle.color("red")
+		hexagon2()
+		turtle.forward(90)
+		turtle.right(60)
+
 #square()
-hexagon2()
+hexagon3()
 
 
 turtle.exitonclick()
