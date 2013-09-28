@@ -13,7 +13,12 @@ def square():
 
 def hexagon():
 	for _ in range(6):
-		turtle.forward(90)
+		turtle.forward(200)
+		turtle.left(60)
+
+def hexagon(size):
+	for _ in range(6):
+		turtle.forward(size)
 		turtle.left(60)
 
 def hexagon2():
@@ -33,8 +38,19 @@ def hexagon3():
 		turtle.forward(90)
 		turtle.right(60)
 
-#square()
-hexagon3()
+def polygon(sides,size):
+	angle = 360/sides
 
+	for _ in range(sides):
+		turtle.forward(size)
+		turtle.right(angle)
+
+#square()
+#hexagon3()
+turtle.width(2)
+
+for _ in range(6):
+	polygon(5,80)
+	turtle.left(60)
 
 turtle.exitonclick()
