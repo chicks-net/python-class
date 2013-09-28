@@ -3,20 +3,24 @@
 import turtle
 
 turtle.shape("turtle")
+turtle.width(2)
 
-turtle.forward(25)
-turtle.left(90)
+right_angle=90
+square_size=140
+
+turtle.forward(square_size)
+turtle.left(right_angle)
 
 turtle.color("red")
-turtle.forward(25)
-turtle.left(90)
+turtle.forward(square_size)
+turtle.left(right_angle)
 
 turtle.color("green")
-turtle.forward(25)
-turtle.left(90)
+turtle.forward(square_size)
+turtle.left(right_angle)
 
 turtle.color("blue")
-turtle.forward(25)
-turtle.left(90)
+turtle.forward(square_size)
+turtle.left(right_angle)
 
 turtle.exitonclick()
